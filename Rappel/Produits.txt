@@ -1,0 +1,3 @@
+3,Cartouche,200.0
+2,Smartphone,30000.0
+1,Laptop,55000.0
