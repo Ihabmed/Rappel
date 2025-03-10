@@ -11,7 +11,7 @@ package com.mycompany.rappel;
 public class ProduitConsommable extends Produit {
     private String dateExpiration;
     
-    public ProduitConsommable(int id, String nom, double prix, String dateExpiration) throws PrixNegatifException {
+    public ProduitConsommable(int id, String nom, double prix, String dateExpiration) throws PrixNegatifException, NomInvalideException {
         super(id, nom, prix);
         this.dateExpiration = dateExpiration;
     }

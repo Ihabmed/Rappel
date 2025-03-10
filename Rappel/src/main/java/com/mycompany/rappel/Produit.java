@@ -8,47 +8,14 @@ package com.mycompany.rappel;
  *
  * @author ihab
  */
-public class Produit {
-    private int id;
-    private String nom;
-    private double prix;
+public class Produit extends ProduitGenerique {
 
-    public Produit(int id, String nom, double prix) throws PrixNegatifException {
-        if (prix >= 0) {
-            this.prix = prix;
-        }
-        else {
-            throw new PrixNegatifException("prix est negatif");
-        }
-        this.id = id;
-        this.nom = nom;
+    public Produit(int id, String nom, double prix) throws PrixNegatifException, NomInvalideException {
+        super(id, nom, prix);
     }
     
-    public void afficher() {
-        System.out.println("ID: " + id + ", Nom: " + nom + ", Prix: " + prix);
-    }
-
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    public String getNom() {
-        return nom;
-    }
-
-    public void setNom(String nom) {
-        this.nom = nom;
-    }
-
-    public double getPrix() {
-        return prix;
-    }
-
-    public void setPrix(double prix) {
-        this.prix = prix;
+    @Override
+    public double calculePrixAvecTaxe() {
+        return super.getPrix() - super.getPrix() * 0.35;
     }
 }

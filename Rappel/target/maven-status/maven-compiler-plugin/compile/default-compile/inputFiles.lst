@@ -1,4 +1,9 @@
+/home/ihab/NetBeansProjects/Rappel/src/main/java/com/mycompany/rappel/Affichable.java
+/home/ihab/NetBeansProjects/Rappel/src/main/java/com/mycompany/rappel/GestionProduits.java
+/home/ihab/NetBeansProjects/Rappel/src/main/java/com/mycompany/rappel/NomInvalideException.java
 /home/ihab/NetBeansProjects/Rappel/src/main/java/com/mycompany/rappel/PrixNegatifException.java
 /home/ihab/NetBeansProjects/Rappel/src/main/java/com/mycompany/rappel/Produit.java
 /home/ihab/NetBeansProjects/Rappel/src/main/java/com/mycompany/rappel/ProduitConsommable.java
+/home/ihab/NetBeansProjects/Rappel/src/main/java/com/mycompany/rappel/ProduitGenerique.java
 /home/ihab/NetBeansProjects/Rappel/src/main/java/com/mycompany/rappel/Rappel.java
+/home/ihab/NetBeansProjects/Rappel/src/main/java/com/mycompany/rappel/SauvegardeThread.java

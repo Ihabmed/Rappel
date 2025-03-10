@@ -1,4 +1,9 @@
 com/mycompany/rappel/PrixNegatifException.class
 com/mycompany/rappel/Produit.class
 com/mycompany/rappel/Rappel.class
+com/mycompany/rappel/SauvegardeThread.class
+com/mycompany/rappel/GestionProduits.class
+com/mycompany/rappel/NomInvalideException.class
+com/mycompany/rappel/Affichable.class
+com/mycompany/rappel/ProduitGenerique.class
 com/mycompany/rappel/ProduitConsommable.class
