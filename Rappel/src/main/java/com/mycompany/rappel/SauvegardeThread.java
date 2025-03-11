@@ -8,20 +8,23 @@ import static com.mycompany.rappel.Rappel.produits;
 import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.util.List;
 
 /**
  *
  * @author ihab
  */
 public class SauvegardeThread extends Thread{
-    
+    BufferedWriter writer;
+
+    public SauvegardeThread() throws IOException {
+        this.writer = new BufferedWriter(new FileWriter("Produits.txt"));
+    }
+
     @Override
     public void run() {
         try {
             System.out.println("Sauvegarde en cour...");
             try {
-                BufferedWriter writer = new BufferedWriter(new FileWriter("Produits.txt"));
                 if (produits.isEmpty()) {
                     writer.write("");
                 } else

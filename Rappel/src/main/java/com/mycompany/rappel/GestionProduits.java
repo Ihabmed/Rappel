@@ -20,7 +20,13 @@ public class GestionProduits {
     }
 
     public void supprimerProduit(int id) {
-        produits.removeIf(p -> p.getId() == id);
+        for (Produit p: produits) {
+            if (p.getId() == id) {
+                produits.remove(p);
+                return;
+            }
+        }
+        System.out.println("le produit n'existe pas");    
     }
     
     public List<Produit> filtrerProduitsParPrix(double seuil) {

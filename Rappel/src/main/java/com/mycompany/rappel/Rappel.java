@@ -20,14 +20,14 @@ public class Rappel {
     public static List<Produit> produits = new ArrayList<>();
 
     
-    public static void main(String[] args) throws PrixNegatifException, NomInvalideException {
+    public static void main(String[] args) throws PrixNegatifException, NomInvalideException, IOException {
         Scanner scan = new Scanner(System.in);
         int reponse = 0;
         GestionProduits gestionProduits = new GestionProduits();
         int id;
         String nom; 
         double prix;
-        SauvegardeThread sauvegardeThread = new SauvegardeThread();
+        SauvegardeThread sauvegardeThread;
         
         while (reponse != 7) {
             System.out.println("Bienvenue sur le gestionnaire de stock : ");
@@ -67,7 +67,10 @@ public class Rappel {
                     id = scan.nextInt();
                     gestionProduits.supprimerProduit(id);
                 }
-                case 4 -> sauvegardeThread.start();
+                case 4 -> { 
+                    sauvegardeThread = new SauvegardeThread();
+                    sauvegardeThread.start();
+                }
                 case 5 -> {
                     produits.clear();
                     try {
